@@ -1,0 +1,180 @@
+.productInfo {
+  padding: 40px;
+  margin-top: 30px;
+}
+.logogrid{
+  width: 100%;
+  margin-left: 25%;
+}
+
+.productHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+}
+
+.productText {
+  flex-grow: 1;
+}
+
+.productText h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #333;
+}
+
+.productText p {
+  font-size: 24px;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  width: inherit;
+}
+
+.button {
+  padding: 20px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.visitButton {
+  position: relative;
+  width: 150px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000123  ;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.upvoteButton {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: 1px solid #ff5a5f;
+  position: relative;
+  overflow: hidden;
+}
+
+.upvotedButton {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ff5a5f;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .productInfo {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .logogrid {
+    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .productHeader {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    margin: 0 auto 20px auto;
+  }
+  .productText h1 {
+    font-size: 28px;
+  }
+  .productText p {
+    font-size: 18px;
+  }
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .visitButton {
+    width: 100%;
+  }
+  .dropdown {
+    top: 40px;
+    right: 10px;
+    width: calc(100% - 20px);
+  }
+  .dropdown a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productInfo {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .logogrid {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .productText h1 {
+    font-size: 24px;
+  }
+  .productText p {
+    font-size: 16px;
+  }
+  .dropdown {
+    top: 30px;
+    right: 5px;
+  }
+  .dropdown a {
+    padding: 8px;
+  }
+}
